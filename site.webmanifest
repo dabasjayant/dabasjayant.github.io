@@ -1,0 +1,20 @@
+{
+    "name": "Jayant D",
+    "short_name": "Jayant D",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#02040a",
+    "background_color": "#02040a",
+    "start_url": "https://dabasjayant.github.io",
+    "display": "standalone"
+}
