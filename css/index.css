@@ -48,7 +48,6 @@
   outline: none;
   text-decoration: none;
   color: #3fb950;
-  position: relative;
   display: inline-block;
 }
 .intro p > a::after {
@@ -60,7 +59,7 @@
   position: relative;
   bottom: 0.37em;
   background-color: #3fb950;
-  opacity: 0.5;
+  opacity: 0.8;
   transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
 }
 .intro p a:hover::after {
