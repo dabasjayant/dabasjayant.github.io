@@ -1,3 +1,69 @@
+@font-face {
+  font-family: Calibre;
+  src: url('./../assets/font/Calibre-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: Calibre;
+  src: url('./../assets/font/Calibre-Medium.woff2') format('woff2');
+  font-weight: 500;
+}
+@font-face {
+  font-family: Calibre;
+  src: url('./../assets/font/Calibre-Semibold.woff2') format('woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: SF Mono;
+  src: url('./../assets/font/SFMono-Regular.woff2') format('woff2');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #02040a;
+  color: #f0f6fc;
+}
+
+header {
+  color: #e6edf3;
+  box-shadow: inset 0 -1px #30363d;
+  position: sticky;
+  top: 0;
+}
+
+.header {
+  display: flex;
+  padding: 16px;
+  gap: 12px;
+}
+
+.header .button {
+  position: relative;
+  display: grid;
+  grid-auto-columns: max-content;
+  width: 32px;
+  height: 32px;
+  color: #7d8590;
+  fill: #7d8590;
+  background: transparent;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.button-icon {
+  place-content: center;
+}
+
+.header .logo svg path:first-child {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+
 .content {
   padding: 0px 24px;
 }
