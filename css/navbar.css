@@ -1,0 +1,91 @@
+.overlay-backdrop {
+  align-items: center;
+  justify-content: left;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  display: none;
+}
+.light .overlay-backdrop {
+  background-color: rgba(175,184,193,0.2);
+}
+.dark .overlay-backdrop {
+  background-color: rgba(110,118,129,0.4);
+}
+
+.overlay-modal {
+  border-radius: 12px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  white-space: normal;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  min-width: 192px;
+  height: 100vh;
+  width: min(320px, 100vw - 2rem);
+  animation: slideInRight .25s cubic-bezier(0.33, 1, 0.68, 1) 0s 1 normal none running;
+}
+.light .overlay-modal {
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(31,35,40,0.12), 0 8px 24px rgba(66,74,83,0.12);
+}
+.dark .overlay-modal {
+  background-color: #161b22;
+  box-shadow: 0 0 0 1px #30363d, 0 16px 32px rgba(1,4,9,0.85);
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(-100%);
+  }
+}
+
+.overlay-modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  gap: 12px;
+  color: #e6edf3;
+}
+.overlay-modal-header .button {
+  border-color: transparent !important;
+}
+.light .overlay-modal-header .button:hover {
+  background-color: #f3f4f6;
+}
+.dark .overlay-modal-header .button:hover {
+  background-color: #30363d;
+}
+
+.overlay-modal-content {
+  counter-reset: a;
+  padding: 32px;
+  overflow-y: scroll;
+}
+
+.overlay-modal-content a {
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.overlay-modal-content a .numbered-heading {
+  /* font-size: 24px; */
+}
+
+.overlay-modal-content a:first-of-type .numbered-heading::before {
+  counter-set: a;
+  content: none;
+}
+.overlay-modal-content a .numbered-heading::before {
+  counter-increment: a 1;
+  content: "0" counter(a) ".";
+}
+
+.overlay-modal-content a .numbered-heading::after {
+  content: none;
+}
