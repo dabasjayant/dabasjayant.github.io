@@ -32,23 +32,52 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif;
+}
+body.light {
+  background-color: #ffffff;
+  color: #02040a;
+}
+body.dark {
   background-color: #02040a;
   color: #f0f6fc;
-  font-family: 'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif;
 }
 
 header {
+  position: sticky;
+  top: 0;
+}
+.light .header {
+  color: #1f2328;
+  box-shadow: inset 0 -1px #e6e6e6;
+  background-color: #ffffff;
+  /* background-color: #f6f8fa; */
+}
+.dark .header {
   color: #e6edf3;
   box-shadow: inset 0 -1px #30363d;
   background-color: #02040a;
-  position: sticky;
-  top: 0;
 }
 
 .header {
   display: flex;
+  justify-content: space-between;
   padding: 16px;
   gap: 12px;
+}
+
+.header-left, .header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#theme-icon {
+  font-size: 16px;
+}
+
+.ms-icon {
+  font-family: Segoe_Fluent;
 }
 
 .header .button {
@@ -57,18 +86,28 @@ header {
   grid-auto-columns: max-content;
   width: 32px;
   height: 32px;
-  color: #7d8590;
-  fill: #7d8590;
   background: transparent;
-  border: 1px solid #30363d;
   border-radius: 6px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: 250ms ease all;
 }
+.light .header .button {
+  color: #656d76;
+  fill: #656d76;
+  border: 1px solid #d0d7de;
 
-.header .button:hover {
+}
+.dark .header .button {
+  color: #7d8590;
+  fill: #7d8590;
+  border: 1px solid #30363d;
+}
+.light .header .button:hover {
+  border-color: #656d76;
+}
+.dark .header .button:hover {
   border-color: #7d8590;
 }
 
@@ -76,7 +115,18 @@ header {
   place-content: center;
 }
 
-.header .logo svg path:first-child {
+.header .header-left > .logo svg {
+  margin-top: 5px;
+}
+.light .header .logo svg path {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+.light .header .logo svg path:first-child {
+  fill: #02040a;
+  stroke: #02040a;
+}
+.dark .header .logo svg path:first-child {
   fill: #ffffff;
   stroke: #ffffff;
 }
@@ -84,7 +134,6 @@ header {
 .overlay-backdrop {
   align-items: center;
   justify-content: left;
-  background-color: rgba(110,118,129,0.4);
   top: 0;
   left: 0;
   right: 0;
@@ -92,6 +141,12 @@ header {
   position: fixed;
   z-index: 999;
   display: none;
+}
+.light .overlay-backdrop {
+  background-color: rgba(175,184,193,0.2);
+}
+.dark .overlay-backdrop {
+  background-color: rgba(110,118,129,0.4);
 }
 
 .overlay-modal {
@@ -101,13 +156,19 @@ header {
   white-space: normal;
   display: flex;
   flex-direction: column;
-  background-color: #161b22;
-  box-shadow: 0 0 0 1px #30363d, 0 16px 32px rgba(1,4,9,0.85);
   opacity: 1;
   min-width: 192px;
   height: 100vh;
   width: min(320px, 100vw - 2rem);
   animation: slideInRight .25s cubic-bezier(0.33, 1, 0.68, 1) 0s 1 normal none running;
+}
+.light .overlay-modal {
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(31,35,40,0.12), 0 8px 24px rgba(66,74,83,0.12);
+}
+.dark .overlay-modal {
+  background-color: #161b22;
+  box-shadow: 0 0 0 1px #30363d, 0 16px 32px rgba(1,4,9,0.85);
 }
 
 @keyframes slideInRight {
@@ -123,7 +184,12 @@ header {
   gap: 12px;
   color: #e6edf3;
 }
-.overlay-modal-header .button:hover {
+.overlay-modal-header .button {
+  border-color: transparent !important;
+}
+.light .overlay-modal-header .button:hover {
+  background-color: #f3f4f6;
+}
+.dark .overlay-modal-header .button:hover {
   background-color: #30363d;
-  border-color: #30363d;
 }
