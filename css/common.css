@@ -19,16 +19,28 @@
   src: url('./../assets/font/SFMono-Regular.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: Segoe_Fluent;
+  src: url('./../assets/font/Segoe_Fluent/Segoe_Fluent.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Segoe_MDL2;
+  src: url('./../assets/font/Segoe_MDL2/Segoe_MDL2.ttf') format('truetype');
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: #02040a;
   color: #f0f6fc;
+  font-family: 'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif;
 }
 
 header {
   color: #e6edf3;
   box-shadow: inset 0 -1px #30363d;
+  background-color: #02040a;
   position: sticky;
   top: 0;
 }
