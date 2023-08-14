@@ -73,10 +73,6 @@
   color: inherit;
 }
 
-.overlay-modal-content a .numbered-heading {
-  /* font-size: 24px; */
-}
-
 .overlay-modal-content a:first-of-type .numbered-heading::before {
   counter-set: a;
   content: none;
@@ -88,4 +84,41 @@
 
 .overlay-modal-content a .numbered-heading::after {
   content: none;
+}
+
+.nav-large {
+  counter-reset: a;
+  display: flex;
+  align-items: center;
+  display: none;
+}
+
+.nav-large a {
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-large a:hover {
+  color: #3fb950;
+}
+
+.nav-large a .numbered-heading {
+  font-size: 20px;
+  margin: 6px 20px 0px;
+}
+
+.nav-large a .numbered-heading::before {
+  counter-increment: a 1;
+  content: none;
+}
+
+.nav-large a .numbered-heading::after {
+  content: none;
+}
+
+@media screen and (min-width: 820px) {
+  .nav-large {
+    display: flex;
+  }
 }
