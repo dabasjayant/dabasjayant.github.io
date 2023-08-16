@@ -181,6 +181,37 @@
   background-color: #7d8590;
 }
 
+.details-center {
+  text-align: center;
+}
+.details-center .big-heading {
+  font-size: clamp(40px, 5vw, 60px);
+  margin: 0px 0px 10px;
+}
+
+.details-center p {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-btn {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 16px 32px 12px;
+  border-radius: 6px;
+  border: 1px solid #3fb950;
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+
+.contact-btn:hover {
+  box-shadow: 4px 4px 0 0 #3fb950;
+  transform: translate(-5px, -5px);
+}
+
 @media screen and (max-aspect-ratio: 3/4) and (min-width: 382px) {
   .section-page {
     height: calc(100vh - 68px);
