@@ -188,10 +188,22 @@
   font-size: clamp(40px, 5vw, 60px);
   margin: 0px 0px 10px;
 }
-
 .details-center p {
   max-width: 600px;
   margin: auto;
+}
+
+.profile-image {
+  width: calc(50% - 32px);
+  /* transition: all 0.5s cubic-bezier(0.645,0.045,0.355,1); */
+}
+.light .profile-image {
+  transform: translate(-20px, -20px);
+  box-shadow: 20px 20px 0px 0px #ffffff, 20px 20px 0px 5px #3fb950;
+}
+.dark .profile-image {
+  transform: translate(-20px, -20px);
+  box-shadow: 20px 20px 0px 0px #02040a, 20px 20px 0px 5px #3fb950;
 }
 
 .contact-btn {
