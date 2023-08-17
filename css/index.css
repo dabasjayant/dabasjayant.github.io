@@ -194,16 +194,15 @@
 }
 
 .profile-image {
-  width: calc(50% - 32px);
-  /* transition: all 0.5s cubic-bezier(0.645,0.045,0.355,1); */
+  display: block;
+  margin: 0px auto 50px;
+  width: calc(60% - 32px);
 }
 .light .profile-image {
-  transform: translate(-20px, -20px);
-  box-shadow: 20px 20px 0px 0px #ffffff, 20px 20px 0px 5px #3fb950;
+  box-shadow: 10px 10px 0px 0px #ffffff, 10px 10px 0px 5px #3fb950;
 }
 .dark .profile-image {
-  transform: translate(-20px, -20px);
-  box-shadow: 20px 20px 0px 0px #02040a, 20px 20px 0px 5px #3fb950;
+  box-shadow: 10px 10px 0px 0px #02040a, 10px 10px 0px 5px #3fb950;
 }
 
 .contact-btn {
@@ -235,5 +234,27 @@
   .section-page {
     height: calc(100vh - 68px);
     padding: 0px 0px;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .light .profile-image {
+    box-shadow: 20px 20px 0px 0px #ffffff, 20px 20px 0px 5px #3fb950;
+  }
+  .dark .profile-image {
+    box-shadow: 20px 20px 0px 0px #02040a, 20px 20px 0px 5px #3fb950;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .profile-image {
+    margin: 0px;
+    width: calc(50% - 32px);
+  }
+  .light .profile-image {
+    box-shadow: 30px 30px 0px 0px #ffffff, 30px 30px 0px 5px #3fb950;
+  }
+  .dark .profile-image {
+    box-shadow: 30px 30px 0px 0px #02040a, 30px 30px 0px 5px #3fb950;
   }
 }
