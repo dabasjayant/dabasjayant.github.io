@@ -1,9 +1,13 @@
 User-agent: Googlebot
 Allow: /
-# Disallow: /nogooglebot/
+Disallow: /assets/files/
+
+User-agent: Adsbot-Google
+Allow: /
+Disallow: /assets/files/
 
 User-agent: *
 Allow: /
-# Disallow: 
+Disallow: /assets/files/
 
 Sitemap: https://dabasjayant.github.io/sitemap.xml
