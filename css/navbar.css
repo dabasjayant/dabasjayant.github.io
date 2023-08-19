@@ -121,14 +121,13 @@
 
 .resume-button {
   padding: 16px 16px 12px;
-  line-height: 1;
-  position: relative;
-  display: grid;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-auto-columns: max-content;
   background: transparent;
   border-radius: 6px;
-  align-items: center;
-  justify-content: center;
   font-size: clamp(26px, 5vw, 26px);
   cursor: pointer;
   transition: 250ms ease all;
@@ -150,9 +149,35 @@
   border-color: #7d8590;
 }
 
+.resume-button span {
+  transform: translateY(4px);
+  margin-left: 6px;
+}
+
 .nav-large .resume-button {
   padding: 8px 16px 4px;
   font-size: 20px;
+}
+
+.header-right .svg-icon {
+  padding: 3px;
+  width: 26px;
+  height: 26px;
+  transition: none;
+}
+.light .header-right .svg-icon {
+  background-color: #02040a;
+  box-shadow: inset 0px 0px 0px 6px #ffffff;
+}
+.light .header-right .svg-icon path {
+  fill: #ffffff;
+}
+.dark .header-right .svg-icon {
+  background-color: #ffffff;
+  box-shadow: inset 0px 0px 0px 6px #02040a;
+}
+.dark .header-right .svg-icon path {
+  fill: #02040a;
 }
 
 @media screen and (min-width: 820px) {
