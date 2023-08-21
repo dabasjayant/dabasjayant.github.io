@@ -197,7 +197,6 @@
   display: block;
   margin: 0px auto 50px;
   width: calc(60% - 32px);
-  filter: brightness(1.2);
 }
 .light .profile-image {
   box-shadow: 10px 10px 0px 0px #ffffff, 10px 10px 0px 5px #3fb950;
