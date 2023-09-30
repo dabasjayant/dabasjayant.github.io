@@ -92,6 +92,7 @@
   display: flex;
   align-items: center;
   display: none;
+  gap: 8px;
 }
 
 .nav-large a {
@@ -107,7 +108,8 @@
 
 .nav-large a .numbered-heading {
   font-size: 20px;
-  margin: 6px 20px 0px;
+  margin: 15px 16px 9px;
+  width: max-content;
 }
 
 .nav-large a .numbered-heading::before {

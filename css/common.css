@@ -67,7 +67,7 @@ header {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 16px;
+  padding: 14px 16px;
   gap: 12px;
 }
 
