@@ -295,6 +295,79 @@
   color: #3fb950;
 }
 
+.item {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 200ms ease all;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.light .item:hover {
+  background-color: #f6f6f6;
+}
+.dark .item:hover {
+  background-color: #202020;
+}
+
+.item-date {
+  width: 150px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1rem;
+  letter-spacing: .025em;
+  grid-column: span 2/span 2;
+  text-transform: uppercase;
+}
+.light .item-date {
+  color: #3e3e3e;
+}
+.dark .item-date {
+  color: #a6a6a6;
+}
+
+.item-body {
+  display: flex;
+  flex-direction: column;
+}
+.item-body a {
+  outline: none;
+  text-decoration: none;
+  color: #3fb950;
+  display: inline-block;
+}
+.item-body a::after {
+  content: "";
+  margin-top: 2px;
+  display: block;
+  width: 0px;
+  height: 1px;
+  position: relative;
+  bottom: 0.37em;
+  background-color: #3fb950;
+  opacity: 0.8;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.item-body a:hover::after {
+  width: 100%;
+}
+
+.item-title {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.item-subtitle {
+  margin-top: 8px;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 18px;
+}
+
 @media screen and (max-aspect-ratio: 3/4) and (min-width: 382px) {
   .section-page {
     height: calc(100vh - 68px);
@@ -315,6 +388,15 @@
   }
   .dark .profile-image {
     box-shadow: 20px 20px 0px 0px #02040a, 20px 20px 0px 5px #3fb950;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .item {
+    flex-direction: row;
+  }
+  .item-title {
+    margin-top: -4px;
   }
 }
 

@@ -29,6 +29,11 @@
   src: url('./../assets/font/Segoe_MDL2/Segoe_MDL2.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: Inter;
+  src: url('./../assets/font/Inter_variable.ttf') format('truetype');
+}
+
 html {
   scroll-behavior: smooth;
 }
