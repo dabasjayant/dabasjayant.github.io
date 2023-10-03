@@ -305,10 +305,10 @@
   gap: 12px;
   margin-bottom: 12px;
 }
-.light .item:hover {
+.light .item:hover, .light .item:focus {
   background-color: #f6f6f6;
 }
-.dark .item:hover {
+.dark .item:hover, .dark .item:focus {
   background-color: #202020;
 }
 
