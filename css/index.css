@@ -214,8 +214,6 @@
   text-align: justify;
   font-family: 'Inter';
   font-size: 14px;
-  width: calc(45% - 32px);
-  margin-left: 3%;
 }
 .profile-image ~ p a {
   outline: none;
@@ -432,13 +430,10 @@
     display: flex;
   }
 
-  #about {
-    padding-bottom: 60px;
-  }
-
   .profile-image {
     margin: 0px;
-    width: calc(50% - 32px);
+    width: calc(45% - 32px);
+    margin-left: 3%;
     float: left;
   }
   .light .profile-image {
