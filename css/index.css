@@ -212,6 +212,10 @@
 
 .profile-image ~ p {
   text-align: justify;
+  font-family: 'Inter';
+  font-size: 14px;
+  width: calc(45% - 32px);
+  margin-left: 3%;
 }
 .profile-image ~ p a {
   outline: none;
