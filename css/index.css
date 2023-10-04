@@ -3,7 +3,10 @@
   counter-reset: section;
 }
 
-#about, #experience {
+#about {
+  padding-bottom: 36px;
+}
+#experience {
   padding-bottom: 0px;
 }
 
