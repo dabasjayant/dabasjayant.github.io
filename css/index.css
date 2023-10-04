@@ -3,10 +3,7 @@
   counter-reset: section;
 }
 
-#about {
-  padding-bottom: 36px;
-}
-#experience {
+#about, #experience {
   padding-bottom: 0px;
 }
 
@@ -431,6 +428,10 @@
 
   .vertical-social, .vertical-email {
     display: flex;
+  }
+
+  #about {
+    padding-bottom: 36px;
   }
 
   .profile-image {
