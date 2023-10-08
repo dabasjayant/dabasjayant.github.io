@@ -311,7 +311,8 @@
   background-color: #f6f6f6;
 }
 .dark .item:hover, .dark .item:focus {
-  background-color: #202020;
+  /* background-color: #202020; */
+  background-color: rgba(177,186,196,0.08);
 }
 
 .item-date {
