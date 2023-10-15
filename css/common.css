@@ -140,3 +140,21 @@ header {
   fill: #ffffff;
   stroke: #ffffff;
 }
+
+.footer {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 16px;
+  width: 100%;
+  text-align: center;
+}
+.light .footer {
+  color: #7f8fa1;
+}
+.dark .footer {
+  color: #525d69;
+}
