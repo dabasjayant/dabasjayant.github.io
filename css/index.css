@@ -211,8 +211,6 @@
 }
 
 .profile-image ~ p {
-  text-align: justify;
-  hyphens: auto;
   font-family: 'Inter';
   font-size: 14px;
 }
@@ -385,8 +383,6 @@
 }
 .item-detail li {
   margin-bottom: 8px;
-  text-align: justify;
-  hyphens: auto;
 }
 
 .item-image {
