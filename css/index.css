@@ -1,6 +1,7 @@
 .content {
   padding: 0px 24px;
   counter-reset: section;
+  min-width: 320px;
 }
 
 #about, #experience, #projects {
@@ -274,6 +275,51 @@
   color: #3fb950;
 }
 
+.item-company {
+  padding: 0px 16px;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 24px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+}
+.company-location {
+  font-size: 16px;
+}
+
+.item-company a, .company-location {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.company-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 8px;
+  font-weight: 500;
+}
+.company-logo {
+  width: 48px;
+  height: 16px;
+  border-radius: 2px;
+  margin-right: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 250ms ease all;
+}
+.company-location {
+  margin-top: 6px;
+  margin-left: 68px;
+  font-size: 16px;
+  font-style: italic;
+}
+.company-location::before {
+  content: ' - ';
+}
+
 .item {
   padding: 16px;
   display: flex;
@@ -302,10 +348,10 @@
   grid-column: span 2/span 2;
   text-transform: uppercase;
 }
-.light .item-date, .light .item-subtitle {
+.light .item-date, .light .item-subtitle, .light .item-company {
   color: #6e6e6e;
 }
-.dark .item-date, .dark .item-subtitle {
+.dark .item-date, .dark .item-subtitle, .dark .item-company {
   color: #a6a6a6;
 }
 
@@ -313,13 +359,13 @@
   display: flex;
   flex-direction: column;
 }
-.item-body a {
+.item-body a, .item-company a {
   outline: none;
   text-decoration: none;
   color: #3fb950;
   display: inline-block;
 }
-.item-body a::after {
+.item-body a::after, .item-company a::after {
   content: "";
   margin-top: 2px;
   display: block;
@@ -331,7 +377,7 @@
   opacity: 0.8;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
-.item-body a:hover::after {
+.item-body a:hover::after, .item-company a:hover::after {
   width: 100%;
 }
 
@@ -404,9 +450,31 @@
   .dark .profile-image {
     box-shadow: 20px 20px 0px 0px #02040a, 20px 20px 0px 5px #3fb950;
   }
+  .item-company {
+    flex-direction: row;
+    align-items: center;
+  }
+  .company-location {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
 }
 
 @media screen and (min-width: 650px) {
+  .item-company {
+    justify-content: space-between;
+    font-size: 22px;
+  }
+  .company-title {
+    font-weight: 300;
+  }
+  .company-location::before {
+    content: none;
+  }
+  .company-logo {
+    width: 64px;
+    height: 21px;
+  }
   .item {
     flex-direction: row;
   }
