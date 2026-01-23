@@ -321,34 +321,34 @@
 }
 
 .amazon-logo {
-  background-image: url('../assets/image/company_logo/amazon_logo.png');
+  background-image: url('../../../assets/image/company_logo/amazon_logo.png');
 }
 .dark .amazon-logo {
-  background-image: url('../assets/image/company_logo/amazon_logo_dark.png');
+  background-image: url('../../../assets/image/company_logo/amazon_logo_dark.png');
 }
 .nyu-logo {
-  background-image: url('../assets/image/company_logo/nyu_logo_short.png'); 
+  background-image: url('../../../assets/image/company_logo/nyu_logo_short.png'); 
   transform: translateY(-4px);
 }
 .dark .nyu-logo {
   filter: brightness(1.2);
 }
 .rakuten-logo {
-  background-image: url('../assets/image/company_logo/rakuten_logo.svg');
+  background-image: url('../../../assets/image/company_logo/rakuten_logo.svg');
 }
 .miraidensei-logo {
-  background-image: url('../assets/image/company_logo/miraidensei_logo.png');
+  background-image: url('../../../assets/image/company_logo/miraidensei_logo.png');
   background-size: cover;
 }
 .dark .miraidensei-logo {
-  background-image: url('../assets/image/company_logo/miraidensei_logo_dark.png');
+  background-image: url('../../../assets/image/company_logo/miraidensei_logo_dark.png');
 }
 .bea-logo {
-  background-image: url('../assets/image/company_logo/bea_logo.png');
+  background-image: url('../../../assets/image/company_logo/bea_logo.png');
   background-size: cover;
 }
 .cityu-logo {
-  background-image: url('../assets/image/company_logo/cityuhk_logo.svg');
+  background-image: url('../../../assets/image/company_logo/cityuhk_logo.svg');
   background-size: cover;
 }
 
