@@ -320,6 +320,39 @@
   content: ' - ';
 }
 
+.amazon-logo {
+  background-image: url('../assets/image/company_logo/amazon_logo.png');
+}
+.dark .amazon-logo {
+  background-image: url('../assets/image/company_logo/amazon_logo_dark.png');
+}
+.nyu-logo {
+  background-image: url('../assets/image/company_logo/nyu_logo_short.png'); 
+  transform: translateY(-4px);
+}
+.dark .nyu-logo {
+  filter: brightness(1.2);
+}
+.rakuten-logo {
+  background-image: url('../assets/image/company_logo/rakuten_logo.svg');
+}
+.miraidensei-logo {
+  background-image: url('../assets/image/company_logo/miraidensei_logo.png');
+  background-size: cover;
+}
+.dark .miraidensei-logo {
+  background-image: url('../assets/image/company_logo/miraidensei_logo_dark.png');
+}
+.bea-logo {
+  background-image: url('../assets/image/company_logo/bea_logo.png');
+  background-size: cover;
+}
+.cityu-logo {
+  background-image: url('../assets/image/company_logo/cityuhk_logo.svg');
+  background-size: cover;
+}
+
+
 .item {
   padding: 16px;
   display: flex;
@@ -415,7 +448,7 @@
 }
 .item-detail li {
   margin-bottom: 8px;
-  text-align: justify;
+  text-align: left;
 }
 
 .item-image {
@@ -443,12 +476,12 @@
   background-color: #a6a6a6;
   border-radius: 32px;
   margin: 4px 0px 8px;
-  width: 8px;
-  height: 8px;
-  min-width: 8px;
-  min-height: 8px;
-  max-width: 8px;
-  max-height: 8px;
+  width: 6px;
+  height: 6px;
+  min-width: 6px;
+  min-height: 6px;
+  max-width: 6px;
+  max-height: 6px;
 }
 .item-timeline div:last-of-type {
   background-color: #a6a6a6;
