@@ -59,10 +59,14 @@
   <meta name="twitter:creator" content="@dabasjayant">
 
   <title>Jayant Dabas</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/fonts.css">
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/navbar.css">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/experience.css">
 </head>
 
 <body>
@@ -106,22 +110,22 @@
               </div>
               <div id="modal-content" class="overlay-modal-content">
                 <a href="#home" aria-label="Home">
-                  <div class="numbered-heading">Home</div>
+                  <span>Home</span>
                 </a>
                 <a href="#about" aria-label="About">
-                  <div class="numbered-heading">About</div>
+                  <span>About</span>
                 </a>
                 <a href="#experience" aria-label="Experience">
-                  <div class="numbered-heading">Experience</div>
+                  <span>Experience</span>
                 </a>
                 <a href="#projects" aria-label="Projects">
-                  <div class="numbered-heading">Projects</div>
+                  <span>Projects</span>
                 </a>
                 <a href="#contact" aria-label="Contact">
-                  <div class="numbered-heading">Contact</div>
+                  <span>Contact</span>
                 </a>
                 <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/dabasjayant/" aria-label="Resume">
-                  <div class="resume-button">
+                  <div class="nav-button">
                     <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
                       <path
                         d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
@@ -131,7 +135,7 @@
                   </div>
                 </a>
                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/dabasjayant" aria-label="Github">
-                  <div class="resume-button" style="margin-top: 24px;">
+                  <div class="nav-button" style="margin-top: 24px;">
                     <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" width="24" height="24">
                       <path
                         d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
@@ -163,19 +167,19 @@
       <div class="header-right">
         <div class="nav-large">
           <a href="#home" aria-label="Home">
-            <div class="numbered-heading">Home</div>
+            <span>Home</span>
           </a>
           <a href="#about" aria-label="About">
-            <div class="numbered-heading">About</div>
+            <span>About</span>
           </a>
           <a href="#experience" aria-label="Experience">
-            <div class="numbered-heading">Experience</div>
+            <span>Experience</span>
           </a>
           <a href="#projects" aria-label="Projects">
-            <div class="numbered-heading">Projects</div>
+            <span>Projects</span>
           </a>
           <a href="#contact" aria-label="Contact">
-            <div class="numbered-heading">Contact</div>
+            <span>Contact</span>
           </a>
         </div>
         <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/dabasjayant/" aria-label="LinkedIn" style="line-height: 0;">
@@ -197,20 +201,59 @@
   </header>
   <div class="content">
     <section id="home" class="section-page">
-      <div class="fadeup-enter-done code-style" style="transition-delay: 100ms;">
-        <h1>Hi, my name is</h1>
-      </div>
-      <div class="fadeup-enter-done">
-        <h2 class="big-heading">Jayant Dabas.</h2>
-      </div>
-      <div class="fadeup-enter-done" style="transition-delay: 300ms;">
-        <h3 class="big-heading subtitle">I turn data into actionable insights and create robust applications.</h3>
-      </div>
+        <!-- Mobile text -->
+        <div class="home-text-container-mobile">
+          <div>
+            <span class="title">Hi, I’m Jayant Dabas.</span><br>
+            <span class="subtitle">
+              A <span class="highlighted-text">Machine Learning Engineer</span> and Graduate Student in Data Science at NYU.
+            </span>
+          </div>
+          <div class="big-heading">
+            Looking <span style="font-style: italic; font-weight: 100;">for</span> my next <br>
+            <span style="font-weight: 600;">opportunity</span> <br>
+            to make <span style="font-style: italic; font-weight: 100;">a</span> <span style="font-weight: 600;">change</span>. <br>
+            The <span class="highlighted-text" style="font-weight: 600;">digital</span> way.
+          </div>
+        </div>
+        <!-- Tab text -->
+        <div class="home-text-container-tab">
+          <div>
+            <span class="title">Hi, I’m Jayant Dabas.</span><br>
+            <span class="subtitle">
+              A <span class="highlighted-text">Machine Learning Engineer</span> and Graduate Student in Data Science at NYU.
+            </span>
+          </div>
+        </div>
+        <!-- Large screens -->
+        <div class="home-text-container">
+          <span class="title">Hi, I’m Jayant Dabas.</span><br>
+          <span class="subtitle">
+            A <span class="highlighted-text">Machine Learning Engineer</span> and Graduate Student in Data Science at NYU.
+          </span>
+          <div class="big-heading">
+            Looking <span style="font-style: italic; font-weight: 100;">for</span> my next <br>
+            <span style="font-weight: 600;">opportunity</span> <br>
+            to make <span style="font-style: italic; font-weight: 100;">a</span> <span style="font-weight: 600;">change</span>. <br>
+            The <span class="highlighted-text" style="font-weight: 600;">digital</span> way.
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="home-image-container"></div>
+        <!-- Tab text -->
+        <div class="home-text-container-tab">
+          <div class="big-heading">
+            Looking <span style="font-style: italic; font-weight: 100;">for</span> my next <br>
+            <span style="font-weight: 600;">opportunity</span> <br>
+            to make <span style="font-style: italic; font-weight: 100;">a</span> <span style="font-weight: 600;">change</span>. <br>
+            The <span class="highlighted-text" style="font-weight: 600;">digital</span> way.
+          </div>
+        </div>
     </section>
     <section id="about" class="section">
       <h2 class="numbered-heading">About Me</h2>
       <div class="details">
-        <img class="profile-image" src="./../../assets/image/profile.jpeg" alt="Jayant Dabas">
+        <img class="profile-image" src="./../assets/image/profile.jpeg" alt="Jayant Dabas">
         <div class="intro">
           <h3>Intro</h3>
           <p>Hi, I&apos;m Jayant Dabas, the founder of AnalyticsQ. I&apos;m currently pursuing a graduate degree in Data Science at New York University (NYU), learning in-depth knowledge to improve the application. In my previous roles, I&apos;ve worked as a Software Engineer, DevOps engineer, and Data Analyst while collaborating with diverse teams in multiple regions in APAC.</p>
