@@ -11,12 +11,12 @@ body {
 body.light {
   background-color: #ffffff;
   /* background-color: #f7f6f4; */
-  color: #02040a;
+  color: #0f0e0e;
 }
 body.dark {
   background-color: #0d1117;
   /* background-color: #02040a; */
-  color: #f0f6fc;
+  color: #ededed;
 }
 
 header {

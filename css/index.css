@@ -73,10 +73,10 @@
   position: absolute;
   padding: 0px 32px 48px;
   height: calc(100% - 48px);
-  color: rgba(255,255,255,0.87);
   overflow-wrap: break-word;
   z-index: 1;
   inset: 0;
+  color: #f2f2f2;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -91,7 +91,6 @@
 .home-text-container {
   display: none;
   position: relative;
-  color: rgb(15, 14, 14);
   width: calc(100% - 320px);
   padding: 0px 64px;
   overflow-wrap: break-word;
@@ -119,7 +118,88 @@
   margin-top: 64px;
 }
 
+/* ---------- About, Projects ---------- */
+
+#about .title-backdrop, #projects .title-backdrop {
+  width: 225px;
+  height: 52px;
+  background-color: #f0ff00;
+}
+.dark #about .title-backdrop, .dark #projects .title-backdrop {
+  background-color: rgba(0, 225, 30, 0.87);
+}
+#about .title, #projects .title {
+  font-family: 'Poppins',sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  position: relative;
+  margin: -24px 0px 20px 0px;
+  padding: 0px 20px;
+  grid-area: 2 / 1 / 3 / 2;
+  justify-self: start;
+  align-self: start;
+}
+#about .details {
+  line-height: 2.2em;
+  font-size: 14px;
+  text-align: left;
+  font-family: georgia, palatino, serif;
+  position: relative;
+  margin: 0px 0px 33px 0;
+  padding: 0px 20px;
+  grid-area: 3 / 1 / 4 / 2;
+  justify-self: start;
+  align-self: start;
+  overflow-wrap: break-word;
+}
+
+/* ---------- Projects ---------- */
+
+#projects .title-backdrop {
+  width: 285px;
+}
+
+/* ---------- Experience, Contact ---------- */
+
+#experience .title-backdrop, #contact .title-backdrop {
+  margin: -27px 0px 32px 0px;
+  width: 285px;
+  height: 52px;
+  background-color: #f0ff00;
+}
+.dark #experience .title-backdrop, .dark #contact .title-backdrop {
+  background-color: rgba(0, 225, 30, 0.87);
+}
+#experience .title, #contact .title {
+  font-family: 'Poppins',sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  position: relative;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 20px;
+  grid-area: 2 / 1 / 3 / 2;
+  justify-self: start;
+  align-self: start;
+}
+
 /* ---------- Contact ---------- */
+
+#contact .title-backdrop {
+  width: 225px;
+}
+#contact .details {
+  line-height: 2.2em;
+  font-size: 14px;
+  text-align: left;
+  font-family: georgia, palatino, serif;
+  position: relative;
+  margin: 0px 0px 33px 0;
+  padding: 0px 20px;
+  grid-area: 3 / 1 / 4 / 2;
+  justify-self: start;
+  align-self: start;
+  overflow-wrap: break-word;
+}
 
 .contact-btn {
   display: inline-block;
@@ -230,10 +310,6 @@
   .home-text-container {
     display: block;
   }
-  .dark .home-text-container {
-    color: #ffffff;
-    opacity: 0.87;
-  } 
   #home .title, #home .subtitle {
     font-size: 18px;
   }
@@ -244,6 +320,25 @@
     grid-area: 1 / 1 / 2 / 2;
     justify-self: start;
     align-self: start;
+  }
+
+  /* ----- About, Experience, Projects, Contact ----- */
+  #about .title, #experience .title, #projects .title, #contact .title {
+    font-size: 50px;
+    padding: 0px 64px;
+  }
+  #about .details, #contact .details {
+    padding: 0px 64px;
+  }
+  #about .title-backdrop, #experience .title-backdrop, #projects .title-backdrop, #contact .title-backdrop {
+    width: 600px;
+    height: 64px;
+  }
+  #about .title, #projects .title {
+  margin: -44px 0px 54px 0px;
+  }
+  #experience .title-backdrop, #contact .title-backdrop {
+    margin: -36px 0px 54px 0px;
   }
 }
 
