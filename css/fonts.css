@@ -1,0 +1,41 @@
+@font-face {
+  font-family: Calibre;
+  src: url('./../assets/font/Calibre-Regular.woff2') format('woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: Calibre;
+  src: url('./../assets/font/Calibre-Medium.woff2') format('woff2');
+  font-weight: 500;
+}
+@font-face {
+  font-family: Calibre;
+  src: url('./../assets/font/Calibre-Semibold.woff2') format('woff2');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: SF Mono;
+  src: url('./../assets/font/SFMono-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Segoe_Fluent;
+  src: url('./../assets/font/Segoe_Fluent/Segoe_Fluent.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Segoe_MDL2;
+  src: url('./../assets/font/Segoe_MDL2/Segoe_MDL2.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Inter;
+  src: url('./../assets/font/Inter_variable.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Proxima;
+  src: url('./../assets/font/proxima-n-w01-reg.woff2') format('woff2');
+  font-weight: 400;
+}
