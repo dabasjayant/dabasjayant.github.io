@@ -163,8 +163,12 @@
 
 .item-detail ul {
   padding-left: 20px;
-  font-family: 'Inter';
-  font-size: 13px;
+  font-family: georgia, palatino, serif;
+  font-size: 14px;
+  line-height: 2.2em;
+  overflow-wrap: break-word;
+  opacity: 0.9;
+  list-style-type: disc;
 }
 .light .item-detail {
   color: #2d2d2d;

@@ -6,10 +6,6 @@
   margin: 0 auto;
 }
 
-#contact {
-  padding-bottom: 60px;
-}
-
 .highlighted-text {
   background-color: #f0ff00;
 }
@@ -152,6 +148,9 @@
   align-self: start;
   overflow-wrap: break-word;
 }
+#about p {
+  opacity: 0.9;
+}
 
 /* ---------- Projects ---------- */
 
@@ -184,6 +183,9 @@
 
 /* ---------- Contact ---------- */
 
+#contact {
+  padding-bottom: 60px;
+}
 #contact .title-backdrop {
   width: 225px;
 }
@@ -332,7 +334,7 @@
   }
   #about .title-backdrop, #experience .title-backdrop, #projects .title-backdrop, #contact .title-backdrop {
     width: 600px;
-    height: 64px;
+    height: 72px;
   }
   #about .title, #projects .title {
   margin: -44px 0px 54px 0px;
