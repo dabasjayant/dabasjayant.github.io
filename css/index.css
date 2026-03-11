@@ -157,6 +157,9 @@
 #projects .title-backdrop {
   width: 285px;
 }
+#projects .item {
+  flex-direction: column;
+}
 
 /* ---------- Experience, Contact ---------- */
 
@@ -282,6 +285,12 @@
   }
   #home .big-heading {
     font-size: 44px;
+  }
+}
+
+@media (min-width: 650px) {
+  #projects .item {
+    flex-direction: row;
   }
 }
 
